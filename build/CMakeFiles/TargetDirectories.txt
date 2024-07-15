@@ -1,3 +1,0 @@
-/home/zzpku/myCode/OOP/build/CMakeFiles/rebuild_cache.dir
-/home/zzpku/myCode/OOP/build/CMakeFiles/edit_cache.dir
-/home/zzpku/myCode/OOP/build/CMakeFiles/test01.dir

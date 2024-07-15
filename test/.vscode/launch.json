@@ -8,7 +8,7 @@
             "name": "(gdb) 启动",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/test01",//可执行文件的位置！
+            "program": "${workspaceFolder}/build/${fileBasenameNoExtension}",//可执行文件的位置！
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

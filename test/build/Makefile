@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zzpku/myCode/OOP
+CMAKE_SOURCE_DIR = /home/zzpku/myCode/OOP/test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zzpku/myCode/OOP/build
+CMAKE_BINARY_DIR = /home/zzpku/myCode/OOP/test/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzpku/myCode/OOP/build/CMakeFiles /home/zzpku/myCode/OOP/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzpku/myCode/OOP/test/build/CMakeFiles /home/zzpku/myCode/OOP/test/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzpku/myCode/OOP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzpku/myCode/OOP/test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test01
+# Target rules for targets named test
 
 # Build rule for target.
-test01: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test01
-.PHONY : test01
+test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test
+.PHONY : test
 
 # fast build rule for target.
-test01/fast:
-	$(MAKE) -f CMakeFiles/test01.dir/build.make CMakeFiles/test01.dir/build
-.PHONY : test01/fast
+test/fast:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
 
 test.o: test.cpp.o
 
@@ -129,7 +129,7 @@ test.o: test.cpp.o
 
 # target to build an object file
 test.cpp.o:
-	$(MAKE) -f CMakeFiles/test01.dir/build.make CMakeFiles/test01.dir/test.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.o
 .PHONY : test.cpp.o
 
 test.i: test.cpp.i
@@ -138,7 +138,7 @@ test.i: test.cpp.i
 
 # target to preprocess a source file
 test.cpp.i:
-	$(MAKE) -f CMakeFiles/test01.dir/build.make CMakeFiles/test01.dir/test.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.i
 .PHONY : test.cpp.i
 
 test.s: test.cpp.s
@@ -147,7 +147,7 @@ test.s: test.cpp.s
 
 # target to generate assembly for a file
 test.cpp.s:
-	$(MAKE) -f CMakeFiles/test01.dir/build.make CMakeFiles/test01.dir/test.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.s
 .PHONY : test.cpp.s
 
 # Help Target
@@ -158,7 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test01"
+	@echo "... test"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"

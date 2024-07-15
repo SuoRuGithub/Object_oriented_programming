@@ -1,4 +1,4 @@
-# Install script for directory: /home/zzpku/myCode/OOP
+# Install script for directory: /home/zzpku/myCode/OOP/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/zzpku/myCode/OOP/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/zzpku/myCode/OOP/test/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
