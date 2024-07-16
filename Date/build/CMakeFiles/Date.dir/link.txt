@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/Date.dir/Date.cpp.o  -o Date 

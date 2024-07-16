@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zzpku/myCode/OOP/Date/Date.cpp
+Date.hpp
+/home/zzpku/myCode/OOP/Date/Date.hpp
+
+/home/zzpku/myCode/OOP/Date/Date.hpp
+
+/home/zzpku/myCode/OOP/Date/main.cpp
+iostream
+-
+Date.cpp
+/home/zzpku/myCode/OOP/Date/Date.cpp
+
